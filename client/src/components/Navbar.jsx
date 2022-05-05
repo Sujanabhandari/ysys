@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HiMenu, HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import logo from '../../images/logo.png'
+import logo from '../../images/YSYS.png'
 
 // simple component for Navbar
 const NavbarItem = ({ title, classProps }) => {
@@ -20,8 +20,9 @@ const Navbar = () => {
 
     return (
         <nav className="w-full flex md:justify-center justify-between items-center p-4">
-            <div className="md:flex-[0.5] flex-initial justify-center items-center">
-                <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+            <div className="md:flex-[0.5] flex flex-row justify-start items-center">
+                <img src={logo} alt="logo" className="w-24 cursor-pointer" />
+                <span className="text-white">YSYS</span>         
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
